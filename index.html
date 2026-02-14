@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 80px;
+      background-color: #ffe6f0;
+    }
+    h1 { color: #cc0066; }
+    button {
+      padding: 12px 24px;
+      font-size: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Will You Be My Valentine?</h1>
+
+<button onclick="alert('Best choice ever 💖')">Yes</button>
+<button onmouseover="moveButton(this)">No</button>
+
+<script>
+function moveButton(btn) {
+  btn.style.position = 'absolute';
+  btn.style.top = Math.random() * window.innerHeight + 'px';
+  btn.style.left = Math.random() * window.innerWidth + 'px';
+}
+</script>
+
+</body>
+</html>
